@@ -11,10 +11,10 @@ const eqArrays = function(array1, array2) {
   }
 };
 
-//See results of examples below to test code://
+// See results of examples below to test code:
 
-console.log(eqArrays([1, 2, 3], [1, 2, 3])); // true
-console.log(eqArrays([1, 2, 3], [3, 2, 1])); // false
-console.log(eqArrays(["1", "2", "3"], ["1", "2", "3"])); // true
-console.log(eqArrays(["1", "2", "3"], ["1", "2", 3])); // false
-console.log(eqArrays(["Sam", "Vanessa", "Jame"], ["Jane", "Sam", "Vanessa"])); // false
+console.log(eqArrays([1, 2, 3], [1, 2, 3])); // ✅✅✅ Assertion Passed: these two arrays ARE perfectly equal
+console.log(eqArrays([1, 2, 3], [3, 2, 1])); // 🛑🛑🛑 Assertion Failed: these two arrays are NOT perfectly equal
+console.log(eqArrays(["1", "2", "3"], ["1", "2", "3"])); // ✅✅✅ Assertion Passed: these two arrays ARE perfectly equal
+console.log(eqArrays(["1", "2", "3"], ["1", "2", 3])); // 🛑🛑🛑 Assertion Failed: these two arrays are NOT perfectly equal
+console.log(eqArrays(["Sam", "Vanessa", "Jame"], ["Jane", "Sam", "Vanessa"])); // 🛑🛑🛑 Assertion Failed: these two arrays are NOT perfectly equal
