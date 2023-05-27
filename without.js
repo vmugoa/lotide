@@ -4,18 +4,16 @@ const without = function(source, itemsToRemove) {
   for (let i = 0; i < source.length; i++) {
     let found = false;
 
-    for (let j = 0; j < itemsToRemove.length; j++) {
+    for (let j = 0; j < itemsToRemove.length; j++) {  // We're looping through the nested arrays here.
       if (source[i] === itemsToRemove[j]) {
         found = true;
         break;
       }
     }
-
     if (!found) {
       myNewArray.push(source[i]);
     }
   }
-
   return myNewArray;
 };
 
@@ -40,9 +38,13 @@ const assertArraysEqual = function(array1, array2) {
   }
 };
 
+// Let's tes our code below to see if the function works:
+
 const words = ["hello", "world", "lighthouse"];
 const filteredWords = without(words, ["lighthouse"]);
-console.log(filteredWords);
+console.log(filteredWords); // Output: [ 'hello', 'world' ]
 
-// Make sure the original array was not altered by the without function
-console.log(assertArraysEqual(words, ["hello", "world", "lighthouse"]));
+// Make sure the original array was not altered by the without function:
+console.log(assertArraysEqual(words, ["hello", "world", "lighthouse"])); // Output: ✅✅✅ Assertion Passed: these two arrays ARE perfectly equal
+
+// Looks like the original is confirmed to not have been changed!
