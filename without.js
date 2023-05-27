@@ -47,4 +47,4 @@ console.log(filteredWords); // Output: [ 'hello', 'world' ]
 // Make sure the original array was not altered by the without function:
 console.log(assertArraysEqual(words, ["hello", "world", "lighthouse"])); // Output: ✅✅✅ Assertion Passed: these two arrays ARE perfectly equal
 
-// Looks like the original is confirmed to not have been changed!
+// Looks like the original has been confirmed to not have been changed!
