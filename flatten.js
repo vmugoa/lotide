@@ -1,7 +1,3 @@
-/* Purpose of flatten function: to take in an array containing elements 
-including nested arrays of elements, and return a "flattened" version of 
-the array (aka put everything into a single array). */
-
 const eqArrays = function(array1, array2) {
   if (array1.length !== array2.length) {
     return false;
@@ -37,6 +33,10 @@ const flatten = function(arr) {
   }
   return finalArray;
 };
+
+/* Purpose of flatten function: to take in an array containing elements 
+including nested arrays of elements, and return a "flattened" version of 
+the array (aka put everything into a single array). */
 
 console.log(flatten([1, 2, [3, 4], 5, [6]])); // Output: [1, 2, 3, 4, 5, 6]
 
