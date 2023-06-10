@@ -1,9 +1,14 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 // ASSERT EQUAL FUNCTION
 
 =======
 // FUNCTION IMPLEMENTATION
 >>>>>>> 0ca98c8 (Updated to include notes)
+=======
+// ASSERT EQUAL FUNCTION
+
+>>>>>>> 68f204e (Updated)
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
     console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`); // the actual and expected are perfectly equal
