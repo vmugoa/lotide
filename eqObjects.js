@@ -72,8 +72,7 @@ const anotherMultiColorShirtObject = { size: "medium", colors: ["red", "blue"] }
 console.log(eqObjects(multiColorShirtObject  , anotherMultiColorShirtObject)); // => true
 
 const longSleeveMultiColorShirtObject= { size: "medium", colors: ["red", "blue"], sleeveLength: "long" };
-<<<<<<< HEAD
+
 console.log(eqObjects(multiColorShirtObject  , longSleeveMultiColorShirtObject)); // => false
-=======
+
 console.log(eqObjects(multiColorShirtObject  , longSleeveMultiColorShirtObject)); // => false
->>>>>>> 68f204e (Updated)
