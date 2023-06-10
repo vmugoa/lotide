@@ -1,3 +1,5 @@
+// ASSERT ARRAYS EQUAL FUNCTION:
+
 const eqArrays = function(array1, array2) {
   if (array1.length !== array2.length) {
     return false;
@@ -13,16 +15,16 @@ const eqArrays = function(array1, array2) {
 
 const assertArraysEqual = function(array1, array2) {
   if (eqArrays(array1, array2)) {
-    return `✅✅✅ Assertion Passed: these two arrays ARE perfectly equal`;
+    return `✅✅✅ Assertion Passed: [${array1}] === [${array2}]` // the two arrays ARE perfectly equal
   } else {
-    return `🛑🛑🛑 Assertion Failed: these two arrays are NOT perfectly equal`;
+    return `🛑🛑🛑 Assertion Failed: [${array1}] !== [${array2}]`;  // the two arrays are NOT perfectly equal
   }
 };
 
-// See results of examples below to test code:
+// LET'S TEST OUR CODE!
 
-console.log(assertArraysEqual([1, 2, 3], [1, 2, 3])); // ✅✅✅ Assertion Passed: these two arrays ARE perfectly equal
-console.log(assertArraysEqual([1, 2, 3], [3, 2, 1])); // 🛑🛑🛑 Assertion Failed: these two arrays are NOT perfectly equal
-console.log(assertArraysEqual(["1", "2", "3"], ["1", "2", "3"])); // ✅✅✅ Assertion Passed: these two arrays ARE perfectly equal
-console.log(assertArraysEqual(["1", "2", "3"], ["1", "2", 3])); // 🛑🛑🛑 Assertion Failed: these two arrays are NOT perfectly equal
-console.log(assertArraysEqual(["Sam", "Vanessa", "Jame"], ["Jane", "Sam", "Vanessa"])); // 🛑🛑🛑 Assertion Failed: these two arrays are NOT perfectly equal
+console.log(assertArraysEqual([1, 2, 3], [1, 2, 3])); // ✅✅✅ Assertion Passed: [1,2,3] === [1,2,3]
+console.log(assertArraysEqual([1, 2, 3], [3, 2, 1])); // 🛑🛑🛑 Assertion Failed: [1,2,3] !== [3,2,1]
+console.log(assertArraysEqual(["1", "2", "3"], ["1", "2", "3"])); // ✅✅✅ Assertion Passed: [1,2,3] === [1,2,3]
+console.log(assertArraysEqual(["1", "2", "3"], ["1", "2", 3])); // 🛑🛑🛑 Assertion Failed: [1,2,3] !== [1,2,3]
+console.log(assertArraysEqual(["Sam", "Vanessa", "Jame"], ["Jane", "Sam", "Vanessa"])); // 🛑🛑🛑 Assertion Failed: [Sam,Vanessa,Jame] !== [Jane,Sam,Vanessa]
