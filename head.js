@@ -1,3 +1,13 @@
+
+// HEAD FUNCTION
+
+const head = function(arr) {
+  let firstElement = arr[0];
+  console.log(firstElement);
+  return firstElement;
+};
+
+
 // ASSERT EQUAL FUNCTION
 
 const assertEqual = function(actual, expected) {
@@ -10,14 +20,7 @@ const assertEqual = function(actual, expected) {
   return assertEqual;
 };
 
-// HEAD FUNCTION
-
-const head = function(arr) {
-  let firstElement = arr[0];
-  console.log(firstElement);
-  return firstElement;
-};
-
+// LET'S TEST OUR CODE:
 
 assertEqual(head([5,6,7]), 5);
 // => 5
