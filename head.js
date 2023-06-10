@@ -1,4 +1,3 @@
-
 // HEAD FUNCTION
 
 const head = function(arr) {
@@ -7,11 +6,9 @@ const head = function(arr) {
   return firstElement;
 };
 
-
 // ASSERT EQUAL FUNCTION
 
 const assertEqual = function(actual, expected) {
-
   if (actual === expected) {
     console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
   }   else if (actual !== expected) {
