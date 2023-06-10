@@ -1,4 +1,4 @@
-// ASSERT EQUAL FUNCTION:
+// ASSERT EQUAL FUNCTION
 
 const assertEqual = function(actual, expected) {
 
@@ -10,14 +10,15 @@ const assertEqual = function(actual, expected) {
   return assertEqual;
 };
 
-//--------------------------------
-
 // allItems: an array of strings that we need to look through
 // itemsToCount: an object specifying what to count
 
-const countOnly = function(allItems, itemsToCount) {
-  const result = {};
+// COUNT ONLY FUNCTION
 
+const countOnly = function(allItems, itemsToCount) {
+  // allItems: an array of strings that we need to look through
+// itemsToCount: an object specifying what to count
+  const result = {};
   for (const item of allItems) {
     if (itemsToCount[item]) {
       if (result[item]) {
@@ -27,9 +28,10 @@ const countOnly = function(allItems, itemsToCount) {
       }
     }
   }
-
   return result;
 };
+
+// LET'S TEST OUR CODE!
 
 const allItems = ['a', 'a', 'b', 'c', 'd', 'e', 'a'];
 const itemsToCount = { "a": true, "d": true, "f": true };
@@ -37,8 +39,6 @@ const itemsToCount = { "a": true, "d": true, "f": true };
 const result = countOnly(allItems, itemsToCount);
 
 console.log(result); // => { a: 3, d: 1 }
-
-//------------------------------------
 
 const firstNames = [
   "Karl",
