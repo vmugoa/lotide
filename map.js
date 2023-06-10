@@ -9,11 +9,11 @@ const map = function(array, callback) {
   return results;
 }
 
+// LET'S TEST OUR CODE
 const results1 = map(words, word => word[0]); // here, we're returning the first letter of each item/word in the words array
 console.log(results1); // => [ 'g', 'c', 't', 'm', 't' ]
 
-// ASSERT ARRAYS EQUAL FUNCTION:
-
+// ASSERT ARRAYS EQUAL FUNCTION
 const eqArrays = function(array1, array2) {
   if (array1.length !== array2.length) {
     return false;
@@ -35,5 +35,5 @@ const assertArraysEqual = function(array1, array2) {
   }
 };
 
-// LET'S TEST OUR CODE:
+// LET'S TEST OUR CODE
 console.log(assertArraysEqual(results1, ['g', 'c', 't', 'm', 't'])); // => ✅✅✅ Assertion Passed: [g,c,t,m,t] === [g,c,t,m,t]
