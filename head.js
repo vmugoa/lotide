@@ -1,4 +1,4 @@
-// Assert Equal Function is below //
+// ASSERT EQUAL FUNCTION
 
 const assertEqual = function(actual, expected) {
 
@@ -10,6 +10,8 @@ const assertEqual = function(actual, expected) {
   return assertEqual;
 };
 
+// HEAD FUNCTION
+
 const head = function(arr) {
   let firstElement = arr[0];
   console.log(firstElement);
@@ -18,4 +20,9 @@ const head = function(arr) {
 
 
 assertEqual(head([5,6,7]), 5);
+// => 5
+// => ✅✅✅ Assertion Passed: 5 === 5
+
 assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
+// => Hello
+// => ✅✅✅ Assertion Passed: Hello === Hello
