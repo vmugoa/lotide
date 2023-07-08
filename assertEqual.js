@@ -1,5 +1,4 @@
 // ASSERT EQUAL FUNCTION
-
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
     console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`); // the actual and expected are perfectly equal
