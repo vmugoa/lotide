@@ -1,5 +1,4 @@
 // ASSERT EQUAL FUNCTION
-
 const assertEqual = require('../assertEqual');
 
 // LET'S TEST OUR CODE! 

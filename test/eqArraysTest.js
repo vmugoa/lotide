@@ -1,0 +1,9 @@
+// EQUAL ARRAYS FUNCTION
+const eqArrays = require('../eqArrays');
+
+// LET'S TEST OUR CODE!
+console.log(eqArrays([1, 2, 3], [1, 2, 3])); // => true
+console.log(eqArrays([1, 2, 3], [3, 2, 1])); // => false
+console.log(eqArrays(["1", "2", "3"], ["1", "2", "3"])); // => true
+console.log(eqArrays(["1", "2", "3"], ["1", "2", 3])); // => false
+console.log(eqArrays(["Sam", "Vanessa", "Jame"], ["Jane", "Sam", "Vanessa"])); // => false
